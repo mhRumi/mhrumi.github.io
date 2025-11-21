@@ -3,98 +3,307 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="MD Mehedi Hasan - Lecturer in Computer Science & DevOps Engineer">
-    <title>MD Mehedi Hasan | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="MD Mehedi Hasan - Lecturer, DevOps Engineer & AI Researcher specializing in Software Engineering">
+    <title>Mehedi Hasan | Lecturer & Software Engineer</title>
+    <link rel="stylesheet" href="styles3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Navbar -->
     <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">MD Mehedi Hasan</div>
-            <button class="nav-toggle" id="navToggle">
-                <i class="fas fa-bars"></i>
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-text">MMH</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#research" class="nav-link">Research</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
+    <li><a href="#home" class="nav-link">Home</a></li>
+    <li><a href="#experience" class="nav-link">Experience</a></li>
+    <!-- Remove About link since it's now in Hero -->
+    <li><a href="#research" class="nav-link">Research</a></li>
+    <li><a href="#teaching" class="nav-link">Teaching</a></li>
+    <li><a href="#skills" class="nav-link">Skills</a></li>
+    <li><a href="#publications" class="nav-link">Publications</a></li>
+    <li><a href="#projects" class="nav-link">Projects</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+</ul>
+
         </div>
     </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">MD Mehedi Hasan</h1>
-                <p class="hero-subtitle">Lecturer in Computer Science & Engineering | DevOps Engineer | AI for SE Researcher</p>
-                <p class="hero-description">Bridging academia and industry through cloud computing, DevOps practices, and AI-driven software engineering research</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="https://github.com/mhRumi" target="_blank" class="btn btn-secondary">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-container">
+        <!-- Profile Image Section with Social Links -->
+        <div class="hero-image">
+            <div class="profile-image-wrapper">
+                <div class="profile-image">
+                    <img src="profile.jpg" alt="MD Mehedi Hasan - Lecturer & DevOps Engineer">
                 </div>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/rumiswe" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/mhRumi" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="mailto:mehedi-cse@sust.edu" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
+                <div class="profile-ring"></div>
+            </div>
+            
+            <!-- Social Links Under Profile Image -->
+            <div class="social-links">
+                <a href="https://linkedin.com/in/rumiswe" target="_blank" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/mhRumi" target="_blank" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:mehedi-cse@sust.edu" class="social-link" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://sust.edu/departments/cse/faculty/mehedi-cse@sust.edu" target="_blank" class="social-link" aria-label="University">
+                    <i class="fas fa-university"></i>
+                </a>
             </div>
         </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I am a Lecturer in the Department of Computer Science and Engineering at Shahjalal University of Science and Technology, where I teach courses in Cloud Computing, Software Project Management, and Computer Networking.</p>
-                    <p>With a strong background in DevOps engineering and cloud infrastructure, I have hands-on experience deploying scalable systems on AWS, implementing CI/CD pipelines, and managing containerized applications with Kubernetes and Docker.</p>
-                    <p>My research focuses on AI for Software Engineering, particularly distilling small language models for real-world tasks like program repair and bug detection, and studying technical debt created by LLM-generated code.</p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <div class="stat-number">3.84/4.00</div>
-                            <div class="stat-label">CGPA</div>
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <p class="hero-greeting">Hi There 👋, I'm</p>
+            <h1 class="hero-name">
+                <span class="name-highlight">Mehedi</span> Hasan
+            </h1>
+            <div class="hero-titles">
+                <span class="title-item">Lecturer</span>
+                <span class="separator">|</span>
+                <span class="title-item">DevOps Engineer</span>
+                <span class="separator">|</span>
+                <span class="title-item">SE Researcher</span>
+            </div>
+            
+            <!-- Integrated About Me Content -->
+            <div class="hero-about">
+                <p>
+                    I'm a software engineering educator and researcher with over two years of professional DevOps experience. 
+                    Currently, I work as a <strong>Lecturer</strong> at <a href="https://sust.edu"><strong>Shahjalal University of Science and Technology, Sylhet</strong></a>
+                </p>
+                <p>
+                    I hold a Bachelor's degree in Software Engineering from <a href="https://sust.edu"><strong>Shahjalal University of Science and Technology, Sylhet</strong></a>
+                </p>
+                <p>
+                    My professional experience includes extensive work in DevOps engineering at Vivasoft Limited, working with cutting-edge 
+                    cloud technologies including AWS, Kubernetes, Docker, and Terraform.
+                </p>
+                <p>
+                    I am passionate about research in <strong>AI for software engineering.</strong> and <strong>AI for DevOps.</strong>
+                    <ul>
+                        <li>Use of LLMs for code generation, review, and documentation.</li>
+                        <li>Intelligent bug detection, fault prediction, and software quality assurance using AI</li>
+                        <li>Refactoring</li>
+                        <li>Code Quality</li>
+                        <li>Intelligent infrastructure monitoring with anomaly detection and self-healing systems.</li>
+                    </ul>
+                </p>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i>
+                    Get In Touch
+                </a>
+                <a href="#projects" class="btn btn-secondary">
+                    <i class="fas fa-folder-open"></i>
+                    View Projects
+                </a>
+                <a href="#publications" class="btn btn-outline">
+                    <i class="fas fa-file-alt"></i>
+                    CV / Resume
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Teaching Courses Section -->
+<!-- Teaching Courses Section -->
+<section id="teaching" class="teaching section">
+    <div class="container">
+
+        <!-- Single Combined Courses Card -->
+        <div class="courses-card" data-aos="fade-up">
+            <div class="courses-header">
+                <div class="header-icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <div class="header-content">
+                    <h3>Teaching</h3>
+                    <p>Department of Computer Science and Engineering</p>
+                </div>
+            </div>
+
+            <div class="courses-list">
+                <!-- Course Item 1 -->
+                <div class="course-item">
+                    <div class="course-number">01</div>
+                    <div class="course-icon-small">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="course-details">
+                        <h4>Cloud Computing</h4>
+                        <p>Modern cloud architectures, AWS services, Kubernetes, Docker, and infrastructure as code</p>
+                        <div class="course-tags">
+                            <span class="tag">AWS</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Kubernetes</span>
+                            <span class="tag">IaC</span>
                         </div>
-                        <div class="stat">
-                            <div class="stat-number">350+</div>
-                            <div class="stat-label">Problems Solved</div>
+                    </div>
+                    <div class="course-info">
+                        <span class="credit-badge">3 Credits</span>
+                        <span class="student-count"><i class="fas fa-users"></i> 100+</span>
+                    </div>
+                </div>
+
+                <!-- Course Item 2 -->
+                <div class="course-item">
+                    <div class="course-number">02</div>
+                    <div class="course-icon-small">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="course-details">
+                        <h4>Software Project Management</h4>
+                        <p>Agile methodologies, CI/CD pipelines, DevOps practices, and modern project management</p>
+                        <div class="course-tags">
+                            <span class="tag">Agile</span>
+                            <span class="tag">Scrum</span>
+                            <span class="tag">CI/CD</span>
+                            <span class="tag">DevOps</span>
                         </div>
-                        <div class="stat">
-                            <div class="stat-number">2+ Years</div>
-                            <div class="stat-label">DevOps Experience</div>
+                    </div>
+                    <div class="course-info">
+                        <span class="credit-badge">2 Credits</span>
+                        <span class="student-count"><i class="fas fa-users"></i> 100+</span>
+                    </div>
+                </div>
+
+                <!-- Course Item 3 -->
+                <div class="course-item">
+                    <div class="course-number">03</div>
+                    <div class="course-icon-small">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="course-details">
+                        <h4>Computer Networking</h4>
+                        <p>Network protocols, TCP/IP, DNS, VPC design, and network security in distributed systems</p>
+                        <div class="course-tags">
+                            <span class="tag">TCP/IP</span>
+                            <span class="tag">DNS</span>
+                            <span class="tag">VPC</span>
+                            <span class="tag">Security</span>
                         </div>
+                    </div>
+                    <div class="course-info">
+                        <span class="credit-badge">3 Credits</span>
+                        <span class="student-count"><i class="fas fa-users"></i> 50+</span>
+                    </div>
+                </div>
+
+                <!-- Course Item 4 -->
+                <div class="course-item">
+                    <div class="course-number">04</div>
+                    <div class="course-icon-small">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="course-details">
+                        <h4>Structured Programming</h4>
+                        <p>Fundamental programming with C, algorithms, data structures, and problem-solving</p>
+                        <div class="course-tags">
+                            <span class="tag">C Programming</span>
+                            <span class="tag">Algorithms</span>
+                            <span class="tag">Data Structures</span>
+                        </div>
+                    </div>
+                    <div class="course-info">
+                        <span class="credit-badge">3 Credits</span>
+                        <span class="student-count"><i class="fas fa-users"></i> 100+</span>
+                    </div>
+                </div>
+
+                <!-- Course Item 5 -->
+                <div class="course-item">
+                    <div class="course-number">05</div>
+                    <div class="course-icon-small">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="course-details">
+                        <h4>Python Programming</h4>
+                        <p>Python for automation, data analysis, web development, and scripting applications</p>
+                        <div class="course-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Data Analysis</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                    </div>
+                    <div class="course-info">
+                        <span class="credit-badge">3 Credits</span>
+                        <span class="student-count"><i class="fas fa-users"></i> 50+</span>
+                    </div>
+                </div>
+
+                <!-- Course Item 6 -->
+                <div class="course-item">
+                    <div class="course-number">06</div>
+                    <div class="course-icon-small">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="course-details">
+                        <h4>Discrete Mathematics</h4>
+                        <p>Mathematical foundations: logic, set theory, graph theory, and combinatorics</p>
+                        <div class="course-tags">
+                            <span class="tag">Logic</span>
+                            <span class="tag">Set Theory</span>
+                            <span class="tag">Graph Theory</span>
+                        </div>
+                    </div>
+                    <div class="course-info">
+                        <span class="credit-badge">3 Credits</span>
+                        <span class="student-count"><i class="fas fa-users"></i> 100+</span>
                     </div>
                 </div>
             </div>
+
+        <!-- Teaching Philosophy -->
+        <div class="teaching-philosophy" data-aos="fade-up">
+            <div class="philosophy-icon">
+                <i class="fas fa-lightbulb"></i>
+            </div>
+            <div class="philosophy-content">
+                <h3>Teaching Philosophy</h3>
+                <p>
+                    I believe in bridging the gap between academic theory and industry practice. My courses emphasize 
+                    hands-on projects, real-world case studies, and practical skills that students can immediately apply 
+                    in their careers. I encourage curiosity, critical thinking, and collaborative learning to prepare 
+                    students for the rapidly evolving tech landscape.
+                </p>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Experience Section -->
-    <section id="experience" class="experience">
+    <section id="experience" class="experience section">
         <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
+            <div class="section-header">
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="title-line"></div>
+            </div>
             <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">Nov 2023 - Present</div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>Lecturer, Dept. of CSE</h3>
+                        <span class="timeline-date">Nov 2023 - Present</span>
+                        <h3>Lecturer, Department of Computer Science and Engineering</h3>
                         <h4>Shahjalal University of Science and Technology</h4>
-                        <p>Sylhet, Bangladesh</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Sylhet, Bangladesh</p>
                         <ul>
                             <li>Teaching Cloud Computing, Software Project Management, Computer Networking</li>
                             <li>Instructing Structured Programming, Discrete Mathematics, Python Programming</li>
@@ -103,26 +312,28 @@
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-date">Jun 2023 - Present</div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
                     <div class="timeline-content">
+                        <span class="timeline-date">Jun 2023 - Present</span>
                         <h3>Consultant</h3>
                         <h4>Daricomma.com</h4>
-                        <p>Sylhet, Bangladesh</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Sylhet, Bangladesh</p>
                         <ul>
                             <li>Deployed system on AWS using EC2, Docker, RDS, and Route53</li>
                             <li>Configured Prometheus and Grafana for comprehensive monitoring</li>
-                            <li>Architected scalable infrastructure for online exam preparation platform</li>
+                            <li>Architected scalable infrastructure for online exam platform</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-date">Feb 2023 - Oct 2023</div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
                     <div class="timeline-content">
+                        <span class="timeline-date">Feb 2023 - Oct 2023</span>
                         <h3>Software Engineer L-1</h3>
                         <h4>Vivasoft Limited</h4>
-                        <p>Banani, Dhaka</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Banani, Dhaka</p>
                         <ul>
                             <li>Implemented CI/CD on TeamCity, GitLab, and Bamboo</li>
                             <li>Built AMI with Packer and integrated with CI/CD pipelines</li>
@@ -132,12 +343,13 @@
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-date">Mar 2022 - Jan 2023</div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
                     <div class="timeline-content">
+                        <span class="timeline-date">Mar 2022 - Jan 2023</span>
                         <h3>Jr. DevOps Engineer</h3>
                         <h4>Vivasoft Limited</h4>
-                        <p>Banani, Dhaka</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Banani, Dhaka</p>
                         <ul>
                             <li>Deployed services on AWS EKS using Helm</li>
                             <li>Configured CloudFront for frontend delivery and Route53 for DNS</li>
@@ -147,12 +359,13 @@
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-date">Oct 2021 - Feb 2022</div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
                     <div class="timeline-content">
+                        <span class="timeline-date">Oct 2021 - Feb 2022</span>
                         <h3>Trainee DevOps Engineer</h3>
                         <h4>Vivasoft Limited</h4>
-                        <p>Banani, Dhaka</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Banani, Dhaka</p>
                         <ul>
                             <li>Deployed location tracking service using ECS and Auto Scaling</li>
                             <li>Implemented CI/CD using Jenkins</li>
@@ -166,35 +379,54 @@
     </section>
 
     <!-- Research Section -->
-    <section id="research" class="research">
+    <section id="research" class="research section">
         <div class="container">
-            <h2 class="section-title">Ongoing Research</h2>
+            <div class="section-header">
+                <h2 class="section-title">Ongoing Research</h2>
+                <div class="title-line"></div>
+            </div>
             <div class="research-grid">
-                <div class="research-card">
-                    <div class="research-icon">
-                        <i class="fas fa-brain"></i>
+                <div class="research-card" data-aos="fade-up">
+                    <div class="research-header">
+                        <div class="research-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <span class="research-badge">In Progress</span>
                     </div>
-                    <h3>Distilling Small Language Models</h3>
-                    <p class="research-subtitle">Real-World Software Engineering Tasks</p>
-                    <p>Demonstrating the feasibility of using small, distilled LLMs for critical software engineering tasks such as program repair and bug detection. Combining real datasets with synthetic, teacher-generated data to bridge the gap between accuracy and efficiency.</p>
+                    <h3>Distilling Small Language Models for Real-World Tasks Using Real and Synthetic Data</h3>
+                    <p class="research-subtitle">Code Refactoring</p>
+                    <p class="research-desc">
+                        Demonstrating the feasibility of using small, distilled LLMs for critical software engineering tasks 
+                        such as program repair and bug detection. Combining real datasets with synthetic, teacher-generated data 
+                        to bridge the gap between accuracy and efficiency.
+                    </p>
                     <div class="research-tags">
                         <span class="tag">LLMs</span>
+                        <span class="tag">Knowledge Distillation</span>
                         <span class="tag">Program Repair</span>
                         <span class="tag">Bug Detection</span>
                     </div>
                 </div>
 
-                <div class="research-card">
-                    <div class="research-icon">
-                        <i class="fas fa-code"></i>
+                <div class="research-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="research-header">
+                        <div class="research-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <span class="research-badge">In Progress</span>
                     </div>
-                    <h3>LLMs and Technical Debt</h3>
+                    <h3>How LLMs are Creating Technical Debt</h3>
                     <p class="research-subtitle">Code Quality Analysis</p>
-                    <p>Studying how LLMs are creating technical debt by analyzing the quality of LLM-generated code and comparing it with handwritten code. Understanding the implications for software maintenance and long-term code quality.</p>
+                    <p class="research-desc">
+                        Studying how LLMs are creating technical debt by analyzing the quality of LLM-generated code 
+                        and comparing it with handwritten code. Understanding the implications for software maintenance 
+                        and long-term code quality.
+                    </p>
                     <div class="research-tags">
-                        <span class="tag">Code Quality</span>
                         <span class="tag">Technical Debt</span>
+                        <span class="tag">Code Quality</span>
                         <span class="tag">AI-Generated Code</span>
+                        <span class="tag">Software Maintenance</span>
                     </div>
                 </div>
             </div>
@@ -202,125 +434,167 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section id="projects" class="projects section">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="title-line"></div>
+            </div>
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-users"></i>
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="View project"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
                     </div>
                     <h3>SWE Society Website</h3>
-                    <p class="tech-stack">Express, React, PostgreSQL</p>
                     <p>A comprehensive website for maintaining Software Engineering Society operations, including alumni management, photo blog, and member information system.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-folder"></i>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-folder-open"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="View project"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
                     </div>
                     <h3>File Sharing System</h3>
-                    <p class="tech-stack">Java, Socket Programming</p>
-                    <p>Client-server model file sharing system with socket-based communication. Supports file upload, download, and deletion operations through client socket connections.</p>
+                    <p>Client-server model file sharing system with socket-based communication. Supports file upload, download, and deletion operations.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Socket Programming</span>
+                        <span class="tech-tag">Networking</span>
+                    </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-gamepad"></i>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="View project"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
                     </div>
                     <h3>8 Ball Pool Game</h3>
-                    <p class="tech-stack">Java, LibGdx</p>
                     <p>Full-featured 8 Ball pool game developed from scratch using LibGdx graphics library with realistic physics and smooth gameplay.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">LibGdx</span>
+                        <span class="tech-tag">Game Development</span>
+                    </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-bus"></i>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-bus"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="View project"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
                     </div>
                     <h3>Bus Tracker</h3>
-                    <p class="tech-stack">Java, GPS Module</p>
                     <p>Real-time bus tracking Android application providing live location updates and estimated arrival times using GPS technology.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Android</span>
+                        <span class="tech-tag">GPS</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section id="skills" class="skills section">
         <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="title-line"></div>
+            </div>
             <div class="skills-grid">
-                <div class="skill-category">
+                <div class="skill-category" data-aos="fade-up">
                     <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Kubernetes</span>
-                        <span class="skill-tag">Terraform</span>
-                        <span class="skill-tag">Helm</span>
-                        <span class="skill-tag">Jenkins</span>
-                        <span class="skill-tag">GitLab CI/CD</span>
-                        <span class="skill-tag">Ansible</span>
-                        <span class="skill-tag">Packer</span>
+                    <div class="skill-items">
+                        <span class="skill-item">AWS</span>
+                        <span class="skill-item">Docker</span>
+                        <span class="skill-item">Kubernetes</span>
+                        <span class="skill-item">Terraform</span>
+                        <span class="skill-item">Helm</span>
+                        <span class="skill-item">Jenkins</span>
+                        <span class="skill-item">GitLab CI/CD</span>
+                        <span class="skill-item">Ansible</span>
+                        <span class="skill-item">Packer</span>
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <h3><i class="fas fa-chart-line"></i> Monitoring & Observability</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Prometheus</span>
-                        <span class="skill-tag">Grafana</span>
-                        <span class="skill-tag">Grafana Loki</span>
-                        <span class="skill-tag">Alert Manager</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
                     <h3><i class="fab fa-aws"></i> AWS Services</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">EC2</span>
-                        <span class="skill-tag">EKS</span>
-                        <span class="skill-tag">ECS</span>
-                        <span class="skill-tag">S3</span>
-                        <span class="skill-tag">RDS</span>
-                        <span class="skill-tag">CloudFront</span>
-                        <span class="skill-tag">Route53</span>
-                        <span class="skill-tag">VPC</span>
-                        <span class="skill-tag">ELB</span>
+                    <div class="skill-items">
+                        <span class="skill-item">EC2</span>
+                        <span class="skill-item">EKS</span>
+                        <span class="skill-item">ECS</span>
+                        <span class="skill-item">S3</span>
+                        <span class="skill-item">RDS</span>
+                        <span class="skill-item">CloudFront</span>
+                        <span class="skill-item">Route53</span>
+                        <span class="skill-item">VPC</span>
+                        <span class="skill-item">ELB</span>
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">C/C++</span>
-                        <span class="skill-tag">Go</span>
-                        <span class="skill-tag">Bash</span>
-                        <span class="skill-tag">JavaScript</span>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">Java</span>
+                        <span class="skill-item">C/C++</span>
+                        <span class="skill-item">Go</span>
+                        <span class="skill-item">Bash</span>
+                        <span class="skill-item">JavaScript</span>
                     </div>
                 </div>
 
-                <div class="skill-category">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3><i class="fas fa-chart-line"></i> Monitoring</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Prometheus</span>
+                        <span class="skill-item">Grafana</span>
+                        <span class="skill-item">Grafana Loki</span>
+                        <span class="skill-item">Alert Manager</span>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
                     <h3><i class="fas fa-robot"></i> AI & Machine Learning</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">LLMs</span>
-                        <span class="skill-tag">RAG</span>
-                        <span class="skill-tag">Agentic AI</span>
-                        <span class="skill-tag">TensorFlow</span>
-                        <span class="skill-tag">NumPy</span>
-                        <span class="skill-tag">Pandas</span>
+                    <div class="skill-items">
+                        <span class="skill-item">LLMs</span>
+                        <span class="skill-item">RAG</span>
+                        <span class="skill-item">Agentic AI</span>
+                        <span class="skill-item">TensorFlow</span>
+                        <span class="skill-item">NumPy</span>
+                        <span class="skill-item">Pandas</span>
                     </div>
                 </div>
 
-                <div class="skill-category">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="500">
                     <h3><i class="fas fa-certificate"></i> Certifications</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">CKAD</span>
-                        <span class="skill-tag">Terraform Associate</span>
-                        <span class="skill-tag">Deep Learning (Coursera)</span>
-                        <span class="skill-tag">CNNs (Coursera)</span>
+                    <div class="skill-items">
+                        <span class="skill-item">CKAD</span>
+                        <span class="skill-item">Terraform Associate</span>
+                        <span class="skill-item">Deep Learning</span>
+                        <span class="skill-item">CNNs</span>
                     </div>
                 </div>
             </div>
@@ -328,38 +602,48 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact section">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="title-line"></div>
+            </div>
             <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <a href="mailto:mehedi-cse@sust.edu">mehedi-cse@sust.edu</a>
+                <p class="contact-intro">
+                    I'm always open to discussing research collaborations, teaching opportunities, or DevOps projects. 
+                    Feel free to reach out!
+                </p>
+                <div class="contact-grid">
+                    <div class="contact-card" data-aos="fade-up">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
                         </div>
+                        <h3>Email</h3>
+                        <a href="mailto:mehedi-cse@sust.edu">mehedi-cse@sust.edu</a>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Phone</h4>
-                            <a href="tel:+8801932981532">+880 1932981532</a>
+
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
                         </div>
+                        <h3>Phone</h3>
+                        <a href="tel:+8801932981532">+880 1932981532</a>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Location</h4>
-                            <p>Sylhet, Bangladesh</p>
+
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
                         </div>
+                        <h3>Location</h3>
+                        <p>Sylhet, Bangladesh</p>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-university"></i>
-                        <div>
-                            <h4>Institution</h4>
-                            <a href="https://sust.edu/departments/cse/faculty/mehedi-cse@sust.edu" target="_blank">SUST - CSE Department</a>
+
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="contact-icon">
+                            <i class="fas fa-university"></i>
                         </div>
+                        <h3>Institution</h3>
+                        <a href="https://sust.edu/departments/cse/faculty/mehedi-cse@sust.edu" target="_blank">SUST - CSE Dept</a>
                     </div>
                 </div>
             </div>
@@ -369,15 +653,23 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 MD Mehedi Hasan. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="https://linkedin.com/in/rumiswe" target="_blank">LinkedIn</a>
-                <a href="https://github.com/mhRumi" target="_blank">GitHub</a>
-                <a href="mailto:mehedi-cse@sust.edu">Email</a>
+            <div class="footer-content">
+                <p>&copy; 2025 MD Mehedi Hasan. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/rumiswe" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/mhRumi" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:mehedi-cse@sust.edu" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script3.js"></script>
 </body>
 </html>

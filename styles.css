@@ -1775,6 +1775,8 @@ body {
     gap: 0.5rem;
 }
 
+
+
 .tag {
     background-color: rgba(37, 99, 235, 0.1);
     color: var(--primary-color);
@@ -2280,4 +2282,445 @@ body {
         height: 40px;
         font-size: 1rem;
     }
+}
+
+/* education */
+
+/* Education Section */
+.education {
+    background: var(--bg-primary);
+    position: relative;
+}
+
+.education::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    background: linear-gradient(135deg, var(--bg-accent) 0%, transparent 100%);
+    z-index: 0;
+}
+
+.education .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Education Timeline */
+.education-timeline {
+    max-width: 1000px;
+    margin: 0 auto 4rem;
+}
+
+/* Main Education Card */
+.main-education {
+    background: var(--bg-primary);
+    border-radius: 20px;
+    padding: 3rem;
+    border: 2px solid var(--border-color);
+    box-shadow: var(--shadow-lg);
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.main-education::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--primary-color), var(--accent-color));
+}
+
+.main-education:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 20px 60px rgba(37, 99, 235, 0.2);
+}
+
+/* Education Icon */
+.education-icon {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.5rem;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+    opacity: 0.9;
+}
+
+/* Education Content */
+.education-content {
+    padding-right: 100px;
+}
+
+.education-badge {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.degree-badge {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.year-badge {
+    background: var(--bg-accent);
+    color: var(--primary-color);
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 2px solid var(--primary-color);
+}
+
+.education-content h3 {
+    color: var(--text-primary);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.institution {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.institution i {
+    color: var(--primary-color);
+}
+
+/* Achievement Box */
+.achievement-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+}
+
+.achievement-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.achievement-item i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.achievement-item.highlight i {
+    color: #f59e0b;
+}
+
+.achievement-item div strong {
+    display: block;
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+}
+
+.achievement-item div span {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* Secondary Education Grid */
+.secondary-education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.education-card.secondary {
+    background: var(--bg-primary);
+    border-radius: 16px;
+    padding: 2rem;
+    border: 2px solid var(--border-color);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    text-align: center;
+}
+
+.education-card.secondary:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.secondary-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(59, 130, 246, 0.1));
+    border: 3px solid var(--primary-color);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin: 0 auto 1.5rem;
+}
+
+.secondary-badge {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.secondary-content h4 {
+    color: var(--text-primary);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.secondary-institution {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* GPA Display */
+.gpa-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.gpa-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+.gpa-number {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.gpa-label {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+}
+
+.gpa-status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.gpa-status i {
+    color: #f59e0b;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-education {
+        padding: 2rem 1.5rem;
+    }
+
+    .education-content {
+        padding-right: 0;
+    }
+
+    .education-icon {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 0 auto 1.5rem;
+    }
+
+    .education-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .achievement-box {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .secondary-education-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .highlights-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .academic-highlights {
+        padding: 2rem 1.5rem;
+    }
+
+    .academic-highlights h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .education-badge {
+        flex-direction: column;
+    }
+
+    .highlights-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .highlight-content h4 {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* revevant course style  */
+
+/* Relevant Courses - Exact Skills Section Style */
+.relevant-courses {
+    margin-top: 2rem;
+}
+
+.relevant-courses h4 {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.relevant-courses h4 i {
+    color: var(--primary-color);
+}
+
+.courses-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+/* Match skills section style exactly */
+.course-tag {
+    background-color: var(--bg-accent);
+    color: var(--text-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.course-tag:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+/* Research Interests in Hero Section - Icon Cards Style */
+.hero-research-interests {
+    margin-top: 2rem;
+    padding: 2rem;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    border: 2px solid var(--border-color);
+}
+
+.hero-research-interests h3 {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.hero-research-interests h3 i {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+.interests-grid-hero {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.interest-tag {
+    background: var(--bg-primary);
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: var(--transition);
+    cursor: default;
+}
+
+.interest-tag:hover {
+    border-color: var(--primary-color);
+    background: var(--bg-accent);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.interest-tag i {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    flex-shrink: 0;
+}
+
+.interest-tag span {
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.3;
 }

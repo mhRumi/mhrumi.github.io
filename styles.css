@@ -20,6 +20,7 @@
     --transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
+
 html {
     scroll-behavior: smooth;
 }
@@ -1315,57 +1316,6 @@ body {
     font-weight: 600;
 }
 
-/* Hero Stats */
-.hero-stats {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-    padding: 1.5rem 0;
-}
-
-.stat-item {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-    background-color: var(--bg-card);
-    border-radius: 10px;
-    border: 2px solid var(--border-color);
-    transition: var(--transition);
-}
-
-.stat-item:hover {
-    border-color: var(--primary-color);
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-lg);
-}
-
-.stat-icon {
-    width: 45px;
-    height: 45px;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 1.2rem;
-}
-
-.stat-info h3 {
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    margin-bottom: 0.1rem;
-    font-weight: 700;
-}
-
-.stat-info p {
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-    margin: 0;
-}
-
 /* Hero Buttons */
 .hero-buttons {
     display: flex;
@@ -1616,473 +1566,6 @@ body {
 }
 
 
-/* Teaching Courses Section */
-/* Teaching Courses Section */
-.teaching {
-    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
-    position: relative;
-}
-
-.section-subtitle {
-    text-align: center;
-    color: var(--text-secondary);
-    font-size: 1.1rem;
-    max-width: 700px;
-    margin: 1rem auto 0;
-    line-height: 1.7;
-}
-
-/* Combined Courses Card */
-.courses-card {
-    max-width: 1000px;
-    margin: 0 auto 4rem;
-    background: var(--bg-primary);
-    border-radius: 20px;
-    padding: 0;
-    border: 2px solid var(--border-color);
-    box-shadow: var(--shadow-lg);
-    overflow: hidden;
-    transition: var(--transition);
-}
-
-.courses-card:hover {
-    border-color: var(--primary-color);
-    box-shadow: 0 20px 60px rgba(37, 99, 235, 0.15);
-}
-
-/* Courses Header */
-.courses-header {
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-    padding: 2.5rem;
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-}
-
-.header-icon {
-    width: 70px;
-    height: 70px;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 2rem;
-    flex-shrink: 0;
-}
-
-.header-content h3 {
-    color: white;
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-}
-
-.header-content p {
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 1rem;
-    margin: 0;
-}
-
-/* Courses List */
-.courses-list {
-    padding: 2rem;
-}
-
-.course-item {
-    display: grid;
-    grid-template-columns: 50px 50px 1fr auto;
-    gap: 1.5rem;
-    padding: 1.5rem;
-    border-radius: 12px;
-    margin-bottom: 1rem;
-    background: var(--bg-secondary);
-    border: 2px solid transparent;
-    transition: var(--transition);
-    align-items: center;
-}
-
-.course-item:last-child {
-    margin-bottom: 0;
-}
-
-.course-item:hover {
-    background: var(--bg-accent);
-    border-color: var(--primary-color);
-    transform: translateX(8px);
-    box-shadow: var(--shadow-md);
-}
-
-/* Course Number */
-.course-number {
-    width: 50px;
-    height: 50px;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-
-/* Course Icon Small */
-.course-icon-small {
-    width: 50px;
-    height: 50px;
-    background: var(--bg-primary);
-    border: 2px solid var(--primary-color);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--primary-color);
-    font-size: 1.3rem;
-    transition: var(--transition);
-}
-
-.course-item:hover .course-icon-small {
-    background: var(--primary-color);
-    color: white;
-    transform: scale(1.1);
-}
-
-/* Course Details */
-.course-details {
-    flex: 1;
-}
-
-.course-details h4 {
-    color: var(--text-primary);
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-}
-
-.course-details p {
-    color: var(--text-secondary);
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin-bottom: 0.75rem;
-}
-
-.course-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-}
-
-
-
-.tag {
-    background-color: rgba(37, 99, 235, 0.1);
-    color: var(--primary-color);
-    padding: 0.3rem 0.75rem;
-    border-radius: 6px;
-    font-size: 0.8rem;
-    font-weight: 500;
-    border: 1px solid transparent;
-    transition: var(--transition);
-}
-
-.course-item:hover .tag {
-    border-color: var(--primary-color);
-}
-
-/* Course Info */
-.course-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 0.75rem;
-}
-
-.credit-badge {
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    white-space: nowrap;
-}
-
-.student-count {
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.student-count i {
-    color: var(--primary-color);
-}
-
-/* Courses Summary */
-.courses-summary {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    padding: 2rem;
-    background: var(--bg-secondary);
-    border-top: 2px solid var(--border-color);
-}
-
-.summary-item {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    justify-content: center;
-}
-
-.summary-item i {
-    font-size: 2rem;
-    color: var(--primary-color);
-}
-
-.summary-item div {
-    display: flex;
-    flex-direction: column;
-}
-
-.summary-item strong {
-    color: var(--text-primary);
-    font-size: 1.3rem;
-    font-weight: 700;
-}
-
-.summary-item span {
-    color: var(--text-secondary);
-    font-size: 0.85rem;
-}
-
-/* Teaching Philosophy */
-.teaching-philosophy {
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-    border-radius: 16px;
-    padding: 3rem;
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    box-shadow: 0 12px 40px rgba(37, 99, 235, 0.3);
-    position: relative;
-    overflow: hidden;
-}
-
-.teaching-philosophy::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
-    animation: rotate 20s linear infinite;
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.philosophy-icon {
-    width: 80px;
-    height: 80px;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 2.5rem;
-    flex-shrink: 0;
-    position: relative;
-    z-index: 1;
-}
-
-.philosophy-content {
-    position: relative;
-    z-index: 1;
-}
-
-.philosophy-content h3 {
-    color: white;
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-.philosophy-content p {
-    color: rgba(255, 255, 255, 0.95);
-    line-height: 1.8;
-    font-size: 1.05rem;
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .course-item {
-        grid-template-columns: 50px 1fr;
-        gap: 1rem;
-    }
-
-    .course-icon-small {
-        display: none;
-    }
-
-    .course-info {
-        grid-column: 2;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 1rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .courses-header {
-        flex-direction: column;
-        text-align: center;
-        padding: 2rem;
-    }
-
-    .header-content h3 {
-        font-size: 1.5rem;
-    }
-
-    .courses-list {
-        padding: 1rem;
-    }
-
-    .course-item {
-        grid-template-columns: 1fr;
-        padding: 1.5rem;
-    }
-
-    .course-number {
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-        width: 40px;
-        height: 40px;
-        font-size: 1rem;
-    }
-
-    .course-details h4 {
-        font-size: 1.1rem;
-        padding-right: 50px;
-    }
-
-    .course-info {
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 0.5rem;
-    }
-
-    .courses-summary {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    .teaching-philosophy {
-        flex-direction: column;
-        text-align: center;
-        padding: 2rem;
-    }
-
-    .philosophy-content h3 {
-        font-size: 1.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .courses-card {
-        border-radius: 12px;
-    }
-
-    .courses-header {
-        padding: 1.5rem;
-    }
-
-    .header-icon {
-        width: 60px;
-        height: 60px;
-        font-size: 1.5rem;
-    }
-
-    .course-details h4 {
-        font-size: 1rem;
-    }
-
-    .course-details p {
-        font-size: 0.85rem;
-    }
-
-    .teaching-philosophy {
-        padding: 1.5rem;
-    }
-}
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .courses-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .teaching-philosophy {
-        flex-direction: column;
-        text-align: center;
-        padding: 2rem;
-    }
-
-    .course-header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .course-badge {
-        align-self: flex-start;
-    }
-}
-
-@media (max-width: 480px) {
-    .course-card {
-        padding: 1.5rem;
-    }
-
-    .course-icon {
-        width: 60px;
-        height: 60px;
-        font-size: 1.5rem;
-    }
-
-    .course-header h3 {
-        font-size: 1.3rem;
-    }
-
-    .teaching-philosophy {
-        padding: 1.5rem;
-    }
-
-    .philosophy-content h3 {
-        font-size: 1.5rem;
-    }
-
-    .philosophy-content p {
-        font-size: 0.95rem;
-    }
-}
-
-
 /* Hero Image Section */
 .hero-image {
     position: relative;
@@ -2284,384 +1767,6 @@ body {
     }
 }
 
-/* education */
-
-/* Education Section */
-.education {
-    background: var(--bg-primary);
-    position: relative;
-}
-
-.education::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 300px;
-    background: linear-gradient(135deg, var(--bg-accent) 0%, transparent 100%);
-    z-index: 0;
-}
-
-.education .container {
-    position: relative;
-    z-index: 1;
-}
-
-/* Education Timeline */
-.education-timeline {
-    max-width: 1000px;
-    margin: 0 auto 4rem;
-}
-
-/* Main Education Card */
-.main-education {
-    background: var(--bg-primary);
-    border-radius: 20px;
-    padding: 3rem;
-    border: 2px solid var(--border-color);
-    box-shadow: var(--shadow-lg);
-    margin-bottom: 2rem;
-    position: relative;
-    overflow: hidden;
-    transition: var(--transition);
-}
-
-.main-education::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 6px;
-    height: 100%;
-    background: linear-gradient(180deg, var(--primary-color), var(--accent-color));
-}
-
-.main-education:hover {
-    border-color: var(--primary-color);
-    transform: translateY(-5px);
-    box-shadow: 0 20px 60px rgba(37, 99, 235, 0.2);
-}
-
-/* Education Icon */
-.education-icon {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 2.5rem;
-    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
-    opacity: 0.9;
-}
-
-/* Education Content */
-.education-content {
-    padding-right: 100px;
-}
-
-.education-badge {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-    flex-wrap: wrap;
-}
-
-.degree-badge {
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-    color: white;
-    padding: 0.5rem 1.5rem;
-    border-radius: 25px;
-    font-size: 0.9rem;
-    font-weight: 600;
-}
-
-.year-badge {
-    background: var(--bg-accent);
-    color: var(--primary-color);
-    padding: 0.5rem 1.5rem;
-    border-radius: 25px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    border: 2px solid var(--primary-color);
-}
-
-.education-content h3 {
-    color: var(--text-primary);
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-.institution {
-    color: var(--text-secondary);
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.institution i {
-    color: var(--primary-color);
-}
-
-/* Achievement Box */
-.achievement-box {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-    padding: 1.5rem;
-    background: var(--bg-secondary);
-    border-radius: 12px;
-}
-
-.achievement-item {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.achievement-item i {
-    font-size: 2rem;
-    color: var(--primary-color);
-}
-
-.achievement-item.highlight i {
-    color: #f59e0b;
-}
-
-.achievement-item div strong {
-    display: block;
-    color: var(--text-primary);
-    font-size: 1.2rem;
-    margin-bottom: 0.25rem;
-}
-
-.achievement-item div span {
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-}
-
-/* Secondary Education Grid */
-.secondary-education-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-bottom: 3rem;
-}
-
-.education-card.secondary {
-    background: var(--bg-primary);
-    border-radius: 16px;
-    padding: 2rem;
-    border: 2px solid var(--border-color);
-    box-shadow: var(--shadow-md);
-    transition: var(--transition);
-    text-align: center;
-}
-
-.education-card.secondary:hover {
-    border-color: var(--primary-color);
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
-}
-
-.secondary-icon {
-    width: 70px;
-    height: 70px;
-    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(59, 130, 246, 0.1));
-    border: 3px solid var(--primary-color);
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--primary-color);
-    font-size: 2rem;
-    margin: 0 auto 1.5rem;
-}
-
-.secondary-badge {
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-    color: white;
-    padding: 0.4rem 1rem;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    display: inline-block;
-    margin-bottom: 1rem;
-}
-
-.secondary-content h4 {
-    color: var(--text-primary);
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-}
-
-.secondary-institution {
-    color: var(--text-secondary);
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
-}
-
-/* GPA Display */
-.gpa-display {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-.gpa-circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
-}
-
-.gpa-number {
-    color: white;
-    font-size: 1.8rem;
-    font-weight: 700;
-    line-height: 1;
-}
-
-.gpa-label {
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 0.9rem;
-}
-
-.gpa-status {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-}
-
-.gpa-status i {
-    color: #f59e0b;
-    font-size: 1rem;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .main-education {
-        padding: 2rem 1.5rem;
-    }
-
-    .education-content {
-        padding-right: 0;
-    }
-
-    .education-icon {
-        position: relative;
-        top: auto;
-        right: auto;
-        margin: 0 auto 1.5rem;
-    }
-
-    .education-content h3 {
-        font-size: 1.5rem;
-    }
-
-    .achievement-box {
-        grid-template-columns: 1fr;
-        padding: 1rem;
-    }
-
-    .secondary-education-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .highlights-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-    }
-
-    .academic-highlights {
-        padding: 2rem 1.5rem;
-    }
-
-    .academic-highlights h3 {
-        font-size: 1.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .education-badge {
-        flex-direction: column;
-    }
-
-    .highlights-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .highlight-content h4 {
-        font-size: 1.5rem;
-    }
-}
-
-
-/* revevant course style  */
-
-/* Relevant Courses - Exact Skills Section Style */
-.relevant-courses {
-    margin-top: 2rem;
-}
-
-.relevant-courses h4 {
-    color: var(--text-primary);
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-}
-
-.relevant-courses h4 i {
-    color: var(--primary-color);
-}
-
-.courses-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-}
-
-/* Match skills section style exactly */
-.course-tag {
-    background-color: var(--bg-accent);
-    color: var(--text-primary);
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: var(--transition);
-    border: 2px solid transparent;
-}
-
-.course-tag:hover {
-    background-color: var(--primary-color);
-    color: white;
-    border-color: var(--primary-color);
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
-}
 
 /* Research Interests in Hero Section - Icon Cards Style */
 .hero-research-interests {
@@ -2714,7 +1819,7 @@ body {
 
 .interest-tag i {
     font-size: 1.3rem;
-    color: var(--primary-color);
+    color: var(--text-secondary);
     flex-shrink: 0;
 }
 
@@ -2723,4 +1828,303 @@ body {
     font-size: 0.9rem;
     font-weight: 500;
     line-height: 1.3;
+}
+
+/* new teaching section  */
+
+/* Teaching Experience Section - Simple & Clean */
+.teaching {
+    background: var(--bg-secondary);
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 1rem auto 0;
+}
+
+/* Teaching Card */
+.teaching-card {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--bg-primary);
+    border-radius: 12px;
+    padding: 2.5rem;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+}
+
+.teaching-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Teaching Header */
+.teaching-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.teaching-info h3 {
+    color: var(--text-primary);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.institution {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.university {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.duration {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Courses Section */
+.courses-section h4 {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.courses-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.course-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: var(--bg-secondary);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.course-item:hover {
+    border-color: var(--primary-color);
+    transform: translateX(5px);
+}
+
+.course-item i {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.course-item span {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .teaching-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .teaching-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .courses-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .teaching-card {
+        padding: 1.5rem;
+    }
+
+    .teaching-info h3 {
+        font-size: 1.3rem;
+    }
+
+    .institution {
+        font-size: 1rem;
+    }
+}
+
+/* ################################ */
+/* Education Section - Simple with Gray Icons */
+.education {
+    background-color: var(--bg-secondary);
+}
+
+.education-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.education-card {
+    background-color: var(--bg-card);
+    border-radius: 8px;
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.education-card:hover {
+    border-color: var(--primary-color);
+}
+
+/* Upper Section - Icon + All Info Together */
+.education-main {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.education-main > i {
+    color: var(--text-secondary); /* Gray color */
+    font-size: 2.5rem;
+    margin-top: 0.25rem;
+    min-width: 40px;
+}
+
+.education-info {
+    flex: 1;
+}
+
+.degree-type {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.education-info h3 {
+    color: var(--text-primary);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+}
+
+.education-info .institution {
+    color: var(--text-secondary); /* Gray instead of primary */
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.education-info .institution i {
+    font-size: 0.9rem;
+    color: var(--text-secondary); /* Gray icon */
+}
+
+.education-info .achievement {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.education-info .achievement i {
+    color: var(--text-secondary); /* Gray icons */
+    font-size: 1rem;
+}
+
+/* Courses Section */
+.courses-section {
+    margin-top: 2rem;
+}
+
+.courses-section h4 {
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.courses-section h4 i {
+    color: var(--text-secondary); /* Gray icon */
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 0.75rem;
+}
+
+.course {
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+    padding: 0.6rem 0.9rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+    display: block;
+    text-align: center;
+}
+
+.course:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .education-main {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .education-card {
+        padding: 1.5rem;
+    }
+
+    .education-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .education-card {
+        padding: 1.25rem;
+    }
+
+    .education-main > i {
+        font-size: 2rem;
+    }
+
+    .education-info h3 {
+        font-size: 1.3rem;
+    }
 }

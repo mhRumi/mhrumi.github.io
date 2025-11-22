@@ -372,53 +372,6 @@ body {
     font-weight: 600;
 }
 
-.about-stats {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
-}
-
-.stat-card {
-    background-color: var(--bg-card);
-    padding: 2rem;
-    border-radius: 8px;
-    border: 1px solid var(--border-color);
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    transition: var(--transition);
-}
-
-.stat-card:hover {
-    border-color: var(--primary-color);
-    transform: translateY(-5px);
-}
-
-.stat-icon {
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(135deg, rgba(100, 255, 218, 0.1), rgba(100, 255, 218, 0.05));
-    border: 2px solid var(--primary-color);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    color: var(--primary-color);
-}
-
-.stat-info h3 {
-    font-size: 1.8rem;
-    color: var(--primary-color);
-    margin-bottom: 0.25rem;
-}
-
-.stat-info p {
-    color: var(--text-secondary);
-    font-size: 0.95rem;
-    margin: 0;
-}
 
 /* Experience Section */
 .timeline {
@@ -513,7 +466,7 @@ body {
     font-weight: bold;
 }
 
-/* Research Section */
+/* On going Research Section */
 .research {
     background-color: var(--bg-secondary);
 }
@@ -604,7 +557,7 @@ body {
 }
 
 .tag:hover {
-    border-color: var(--primary-color);
+    border-color: var(--text-primary);
 }
 
 /* Projects Section */
@@ -713,7 +666,7 @@ body {
 }
 
 .skill-category:hover {
-    border-color: var(--primary-color);
+    border-color: var(--text-primary);
     transform: translateY(-5px);
 }
 
@@ -1657,7 +1610,7 @@ body {
 }
 
 .interest-tag:hover {
-    border-color: var(--primary-color);
+    border-color: var(--text-primary);
     background: var(--bg-accent);
     transform: translateY(-3px);
     box-shadow: var(--shadow-md);
@@ -1704,7 +1657,7 @@ body {
 }
 
 .teaching-card:hover {
-    border-color: var(--primary-color);
+    border-color: var(--text-primary);
     box-shadow: var(--shadow-lg);
 }
 
@@ -1832,7 +1785,7 @@ body {
 }
 
 .education-card:hover {
-    border-color: var(--primary-color);
+    border-color: var(--text-primary);
 }
 
 /* Upper Section - Icon + All Info Together */
@@ -1937,8 +1890,8 @@ body {
 }
 
 .course:hover {
-    border-color: var(--primary-color);
-    color: var(--primary-color);
+    border-color: var(--text-primary);
+    color: var(--text-primary);
 }
 
 /* Responsive Design */
@@ -1972,5 +1925,118 @@ body {
 
     .education-info h3 {
         font-size: 1.3rem;
+    }
+}
+
+
+/* Certification Section */
+.certifications {
+    background-color: var(--bg-primary);
+}
+
+.certifications-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.certification-group {
+    background-color: var(--bg-card);
+    border-radius: 8px;
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.certification-group:hover {
+    border-color: var(--primary-color);
+}
+
+/* Provider Header */
+.cert-provider {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.cert-provider > i {
+    color: var(--text-secondary);
+    font-size: 2rem;
+    margin-top: 0.25rem;
+    min-width: 35px;
+}
+
+.provider-info {
+    flex: 1;
+}
+
+.provider-info h3 {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.cert-date {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Certificate List */
+.cert-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.cert-list li {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.cert-list li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .certification-group {
+        padding: 1.5rem;
+    }
+
+    .cert-provider {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .provider-info h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .certification-group {
+        padding: 1.25rem;
+    }
+
+    .cert-list li {
+        font-size: 0.9rem;
+        padding-left: 1.25rem;
     }
 }

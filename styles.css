@@ -374,6 +374,10 @@ body {
 
 
 /* Experience Section */
+.experience {
+    background-color: var(--bg-secondary);
+}
+
 .timeline {
     position: relative;
     max-width: 900px;
